@@ -1456,3 +1456,33 @@ footer .block::after {
   max-width: 800px; /* adjust as necessary */
   margin: 0 auto; /* centers the text block if it's smaller than the parent container */
 }
+
+
+blockquote {
+  padding-left: 10px;
+  color: #1f0d0d;
+  font-style: italic;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.callout {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #eaeaea;
+  margin-bottom: 16px;
+}
+
+.callout-title {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+.callout-description {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
