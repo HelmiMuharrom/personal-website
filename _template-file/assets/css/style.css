@@ -1486,3 +1486,42 @@ blockquote {
   margin-bottom: 8px;
   line-height: 1.4;
 }
+
+.adjustment {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.adjustment {
+  padding: 5px;
+}
+
+.adjustment .highlight {
+  background-color: rgb(236, 236, 43);
+  color: black;
+}
+
+.callout::before {
+  content: "";
+  font-size: 13px;
+  color: #f00; /* Custom color */
+  /* Additional styles for the opening quote */
+}
+
+.callout::after {
+  content: "";
+  font-size: 13px;
+  color: #f00; /* Custom color */
+  /* Additional styles for the closing quote */
+}
+.image-container {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
