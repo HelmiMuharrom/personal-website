@@ -192,19 +192,14 @@ window.onload = function () {
 
 
 // set the testimonial
-let i = 0;
-let testimonialText = `"John has been great to work with. His attention to detail and creativity is beyond what I expected."`;
-let speed = 50;
-
-function typeWriter() {
-  if (i < testimonialText.length) {
-    document.getElementById("testimonial-text").innerHTML += testimonialText.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-
-// Call the function when window loads
 window.onload = function() {
-  typeWriter();
+  const testimonial = document.getElementById("testimonial-text");
+  testimonial.style.opacity = "0";
+  setTimeout(() => {
+    testimonial.style.transition = "opacity 2s";
+    testimonial.style.opacity = "1";
+  }, 500);
+}
+window.onload = function() {
+  document.querySelector(".testimonial-container").classList.add("loaded");
 }
