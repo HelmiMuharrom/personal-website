@@ -1430,3 +1430,11 @@ footer .block::after {
   color: #888;
   margin: 0;
 }
+
+.content {
+  text-align: justify;
+  line-height: 1.5; /* adjust as necessary */
+  font-size: 1rem; /* adjust as necessary */
+  max-width: 800px; /* adjust as necessary */
+  margin: 0 auto; /* centers the text block if it's smaller than the parent container */
+}
