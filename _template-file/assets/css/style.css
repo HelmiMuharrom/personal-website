@@ -1525,3 +1525,13 @@ blockquote {
     padding: 0 20px;
   }
 }
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
