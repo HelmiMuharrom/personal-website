@@ -1535,3 +1535,8 @@ blockquote {
     max-width: 100%;
     height: auto;
   }
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
