@@ -1540,3 +1540,41 @@ blockquote {
     font-weight: bold;
   }
   
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  .image-container figure {
+    margin: 0 10px 20px;
+    width: calc(33.33% - 20px);
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .image-container figure {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-container figure {
+      width: calc(100% - 20px);
+    }
+  }
+
+  .block {
+    background-image: url("assets/images/foooter.png");
+    /* Adjust other background properties as needed */
+  }
+  
+  
