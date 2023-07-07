@@ -166,12 +166,30 @@
               <script type="text/javascript">
                 var pageLink = window.location.href;
                 var pageTitle = String(document.title).replace(/\&/g, '%26');
-                function tbs_click(){pageLink = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageLink}`;socialWindow(pageLink, 570, 570);}
-                function fbs_click(){pageLink = `https://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`;socialWindow(pageLink, 570, 570);}
-                function ins_click(){pageLink = `https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`;socialWindow(pageLink, 570, 570);}
-                function red_click(){pageLink = `https://www.reddit.com/submit?url=${pageLink}`;socialWindow(pageLink, 570, 570);}
-                function pin_click() {pageLink = `https://www.pinterest.com/pin/create/button/?&text=${pageTitle}&url=${pageLink}&description=${pageTitle}`;socialWindow(pageLink, 570, 570);}
-                function socialWindow(pageLink, width, height){var left = (screen.width - width) / 2;var top = (screen.height - height) / 2;var params = "menubar=no,toolbar=no,status=no,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left;window.open(pageLink,"",params);}
+                function tbs_click(){
+  let tweetPageLink = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageLink}`;
+  socialWindow(tweetPageLink, 570, 570);
+}
+
+function fbs_click(){
+  let fbPageLink = `https://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`;
+  socialWindow(fbPageLink, 570, 570);
+}
+
+function ins_click(){
+  let linkedInPageLink = `https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`;
+  socialWindow(linkedInPageLink, 570, 570);
+}
+
+function red_click(){
+  let redditPageLink = `https://www.reddit.com/submit?url=${pageLink}`;
+  socialWindow(redditPageLink, 570, 570);
+}
+
+function pin_click() {
+  let pinterestPageLink = `https://www.pinterest.com/pin/create/button/?&text=${pageTitle}&url=${pageLink}&description=${pageTitle}`;
+  socialWindow(pinterestPageLink, 570, 570);
+}
               </script>
             </div>
             <div class="col-md-8 order-0 order-md-2">
@@ -238,7 +256,7 @@
           </div>
           <div class="row g-5 justify-content-center">
             <div class="col-lg-5 col-md-6 text-center">
-              <a class="d-block mb-5 blog-thumbnail overflow-hidden rounded" href="blog-details(Post-1).html"><img class="img-fluid rounded" loading="lazy" src="http://127.0.0.1:5500/_template-file/assets/images/blog/thumbnail%20blog.jpg" alt="blog post thumbnail"></a>
+              <a class="d-block mb-5 blog-thumbnail overflow-hidden rounded" href="blog-details(Post-1).html"><img class="img-fluid rounded" loading="lazy" src="assets/images/blog/thumbnail blog.jpg" alt="blog post thumbnail"></a>
               <ul class="text-uppercase small mb-3 list-inline">
                 <li class="list-inline-item"><a href="#!" class="btn-link font-tertiary">Technology</a></li>
               </ul>
