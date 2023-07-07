@@ -166,30 +166,12 @@
               <script type="text/javascript">
                 var pageLink = window.location.href;
                 var pageTitle = String(document.title).replace(/\&/g, '%26');
-                function tbs_click(){
-  let tweetPageLink = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageLink}`;
-  socialWindow(tweetPageLink, 570, 570);
-}
-
-function fbs_click(){
-  let fbPageLink = `https://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`;
-  socialWindow(fbPageLink, 570, 570);
-}
-
-function ins_click(){
-  let linkedInPageLink = `https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`;
-  socialWindow(linkedInPageLink, 570, 570);
-}
-
-function red_click(){
-  let redditPageLink = `https://www.reddit.com/submit?url=${pageLink}`;
-  socialWindow(redditPageLink, 570, 570);
-}
-
-function pin_click() {
-  let pinterestPageLink = `https://www.pinterest.com/pin/create/button/?&text=${pageTitle}&url=${pageLink}&description=${pageTitle}`;
-  socialWindow(pinterestPageLink, 570, 570);
-}
+                function tbs_click(){pageLink = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageLink}`;socialWindow(pageLink, 570, 570);}
+                function fbs_click(){pageLink = `https://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`;socialWindow(pageLink, 570, 570);}
+                function ins_click(){pageLink = `https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`;socialWindow(pageLink, 570, 570);}
+                function red_click(){pageLink = `https://www.reddit.com/submit?url=${pageLink}`;socialWindow(pageLink, 570, 570);}
+                function pin_click() {pageLink = `https://www.pinterest.com/pin/create/button/?&text=${pageTitle}&url=${pageLink}&description=${pageTitle}`;socialWindow(pageLink, 570, 570);}
+                function socialWindow(pageLink, width, height){var left = (screen.width - width) / 2;var top = (screen.height - height) / 2;var params = "menubar=no,toolbar=no,status=no,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left;window.open(pageLink,"",params);}
               </script>
             </div>
             <div class="col-md-8 order-0 order-md-2">
