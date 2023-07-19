@@ -205,24 +205,40 @@ window.onload = function() {
 }
 
 
-// Initialize Swiper
 const swiper = new Swiper('.mySwiper', {
-  effect: 'coverflow',
+  effect: 'slide', // Change the effect to slide for smoother transitions
+  speed: 800, // Adjust the speed of transitions (in milliseconds)
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  initialSlide: 1,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  keyboard: {
+    enabled: true,
+  },
+  mousewheel: {
+    sensitivity: 1,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2, // Show 2 slides on screens wider than 768px
+    },
+    992: {
+      slidesPerView: 3, // Show 3 slides on screens wider than 992px
+    },
+  },
 });
+
+swiper.init();
+
